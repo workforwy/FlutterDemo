@@ -5,14 +5,13 @@
  * @LastEditTime: 2020-05-27 11:18:32
  * @FilePath: /FlutterDemo/lib/views/MyPage.dart
  * @Description: 描述
- */ 
+ */
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyPage extends StatelessWidget {
-
-    MyPage({Key key, this.title}) : super(key: key);
-      final String title;
+  MyPage({Key key, this.title}) : super(key: key);
+  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +19,10 @@ class MyPage extends StatelessWidget {
       title: title,
       home: new Scaffold(
         appBar: new AppBar(
-          title: new Text('Welcome to Flutter'),
+          title: new Text('第三页'),
         ),
         body: new Center(
-          child: new Text('Hello World'),
+          child: new Text('我是第三页'),
         ),
       ),
     );

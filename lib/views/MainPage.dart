@@ -5,13 +5,13 @@
  * @LastEditTime: 2020-05-27 11:16:54
  * @FilePath: /FlutterDemo/lib/views/MainPage.dart
  * @Description: 描述
- */ 
+ */
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
 class MainPage extends StatelessWidget {
-  
   MainPage({Key key, this.title}) : super(key: key);
+
   final String title;
 
   @override
@@ -24,8 +24,7 @@ class MainPage extends StatelessWidget {
           title: Text('主页'),
         ),
         body: Center(
-          // child: Text('Hello World !'),
-          child: Text(wordPair.asUpperCase),
+          child: Text('这是主页'),
         ),
       ),
     );
