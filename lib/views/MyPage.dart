@@ -19,10 +19,10 @@ class MyPage extends StatelessWidget {
       title: title,
       home: new Scaffold(
         appBar: new AppBar(
-          title: new Text('第三页'),
+          title: new Text('尾页'),
         ),
         body: new Center(
-          child: new Text('我是第三页'),
+          child: new Text('我是尾页123'),
         ),
       ),
     );

@@ -7,7 +7,6 @@
  * @Description: 描述
  */
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
 
 class MainPage extends StatelessWidget {
   MainPage({Key key, this.title}) : super(key: key);
@@ -16,7 +15,6 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final wordPair = WordPair.random();
     return MaterialApp(
       title: 'Main',
       home: Scaffold(
@@ -27,6 +25,7 @@ class MainPage extends StatelessWidget {
           child: Text('这是主页'),
         ),
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

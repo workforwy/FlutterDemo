@@ -4,8 +4,8 @@ class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
-  //   // that it has a State object (defined below) that contains fields that affect
-  //   // how it looks.
+  // that it has a State object (defined below) that contains fields that affect
+  // how it looks.
 
   // This class is the configuration for the state. It holds the values (in this
   // case the title) provided by the parent (in this case the App widget) and
@@ -15,10 +15,10 @@ class HomePage extends StatefulWidget {
   final String title;
 
   @override
-  _HomePageState createState() => _HomePageState();
+  HomePageState createState() => HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class HomePageState extends State<HomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -68,11 +68,17 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             Text(
               'You have pushed the button this many times:',
-              style: Theme.of(context).textTheme.subtitle1,
+              style: Theme
+                  .of(context)
+                  .textTheme
+                  .subtitle1,
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.subtitle2,
+              style: Theme
+                  .of(context)
+                  .textTheme
+                  .subtitle2,
             ),
           ],
         ),
